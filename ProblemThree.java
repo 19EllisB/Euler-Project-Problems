@@ -19,11 +19,17 @@ class ProblemThree {
             if (iIsPrime) {
                 primes.add(i);
             }
-            i = i.add(BigInteger.ONE);
+            i = i.add(new BigInteger("2"));
         }
         
-        for (BigInteger x: primes) {
-            System.out.println(x.toString());
+        for (BigInteger x: primes) {//prints the prime factors of n
+            if (BigInteger.ZERO.compareTo(n.mod(x)) == 0) {//if n % x == 0
+                System.out.println(x.toString());
+            }
         }
+        
+        /*for (BigInteger x: primes) {
+            System.out.println(x.toString());
+        }*/
     }
 }   
