@@ -19,7 +19,7 @@ class ProblemThree {
             if (iIsPrime) {
                 primes.add(i);
             }
-            i.add(BigInteger.ONE);
+            i = i.add(BigInteger.ONE);
         }
         
         for (BigInteger x: primes) {
