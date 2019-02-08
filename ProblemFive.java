@@ -5,6 +5,12 @@ class ProblemFive {
         long n = a;
         outer: 
         while (true) {
+            for (long i: divisors) {
+                if ((n % i) != 0) {
+                    n += a;
+                    continue outer;
+                }
+            }
             return n;
         }   
     }
