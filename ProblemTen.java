@@ -22,20 +22,6 @@ class ProblemTen {
     public static long main(int upperLimit) {
         ArrayList<Long> primes = new ArrayList<Long>();
         primes.add(new Long(2));
-        /*long n = 3;
-        while (n < upperLimit) {
-            boolean nIsPrime = true;
-            for (long p: primes) {
-                if (n % p == 0) {
-                    nIsPrime = false;
-                    break;
-                }   
-            }
-            if (n % 10000 == 1) { System.out.println("n at " + n); }
-            if (nIsPrime) { primes.add(n); }
-            n += 2;
-        }*/
-        
         for (long i = 3; i <= upperLimit; i += 2) {
             if (nIsPrime(i)) {primes.add(i);}
         }
